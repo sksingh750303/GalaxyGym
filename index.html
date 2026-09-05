@@ -85,10 +85,35 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#697483;font-size:1
   .testimonial-card{padding:20px;}
 }
 
+
+/* Contact + WhatsApp */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px;margin-top:34px}
+.contact-info{display:grid;gap:16px}
+.contact-card{display:flex;gap:16px;align-items:flex-start;padding:22px;border:1px solid rgba(255,210,26,.18);background:linear-gradient(145deg,rgba(255,210,26,.07),rgba(255,255,255,.025));border-radius:20px}
+.contact-icon{width:46px;height:46px;display:grid;place-items:center;border-radius:14px;background:#ffd21a;color:#050505;font-weight:900;font-size:20px;flex:none}
+.contact-card small{display:block;color:#ffd21a;letter-spacing:.14em;font-weight:800;margin-bottom:5px}
+.contact-card strong{display:block;color:#fff;font-size:18px;margin-bottom:7px}
+.contact-card p{color:#a8a8a8;line-height:1.6;margin:0;max-width:520px}
+.contact-link{color:#ffd21a;font-weight:800;text-decoration:none}
+.whatsapp-form{padding:28px;border:1px solid rgba(255,210,26,.24);background:#0d0d0d;border-radius:24px;box-shadow:0 20px 70px rgba(0,0,0,.28)}
+.form-title{font-size:26px;font-weight:900;color:#fff;margin-bottom:5px}
+.form-subtitle{color:#969696;margin-bottom:22px}
+.whatsapp-form label{display:block;color:#cfcfcf;font-size:13px;font-weight:700;margin:0 0 16px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.whatsapp-form input,.whatsapp-form select,.whatsapp-form textarea{width:100%;margin-top:8px;background:#151515;border:1px solid #2b2b2b;border-radius:12px;padding:13px 14px;color:#fff;outline:none;font:inherit;box-sizing:border-box}
+.whatsapp-form input:focus,.whatsapp-form select:focus,.whatsapp-form textarea:focus{border-color:#ffd21a;box-shadow:0 0 0 3px rgba(255,210,26,.10)}
+.whatsapp-form textarea{resize:vertical}
+.form-note{font-size:12px;color:#777;margin:12px 0 0}
+.btn-primary{background:#ffd21a!important;color:#050505!important;border-color:#ffd21a!important}
+.btn-primary:hover{box-shadow:0 12px 35px rgba(255,210,26,.25)}
+@media(max-width:800px){.contact-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
-<header id="header"><div class="container nav"><a class="logo" href="#home">GALAXY <span>GYM</span></a><nav><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#goals">GOALS</a><a href="#testimonials">Reviews</a><a href="#location">LOCATION</a><a href="#contact">CONTACT</a></nav><a class="btn primary" href="#contact">JOIN NOW ↗</a><button class="menu" id="menu" aria-label="Menu">☰</button></div></header>
+<header id="header"><div class="container nav"><a class="logo" href="#home">GALAXY <span>GYM</span></a><nav><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#goals">GOALS</a><a href="#testimonials">Reviews</a><a href="#contact-details">Contact</a><a href="#location">LOCATION</a><a href="#contact">CONTACT</a>
+<a class="btn btn-primary" href="tel:919555555637" aria-label="Call Galaxy Gym">☎ Call Now</a>
+<a class="btn btn-ghost" href="https://wa.me/919555555637?text=Hello%20Galaxy%20Gym%2C%20I%20want%20to%20know%20about%20membership." target="_blank" rel="noopener" aria-label="Chat with Galaxy Gym on WhatsApp">WhatsApp</a></nav><a class="btn primary" href="#contact">JOIN NOW ↗</a><button class="menu" id="menu" aria-label="Menu">☰</button></div></header>
 
 <section class="hero" id="home"><canvas id="scene"></canvas><div class="hero-content"><div class="kicker reveal">MEETHAPUR • BADARPUR • NEW DELHI</div><h1 class="reveal">BUILD YOUR <em>STRONGEST</em> SELF.</h1><p class="reveal">Train with purpose. Build strength. Improve your fitness. Galaxy Gym is your space to show up, push forward and keep progressing.</p><div class="actions reveal"><a class="btn primary" href="#contact">START YOUR JOURNEY ↗</a><a class="btn secondary" href="#services">EXPLORE TRAINING ↓</a></div></div><div class="scroll">SCROLL TO EXPLORE<i></i></div></section>
 
@@ -175,6 +200,70 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#697483;font-size:1
 
 <section class="cta" id="contact"><div class="container"><div class="cta-box reveal"><h2>READY TO<br>GET STRONGER?</h2><p>Contact Galaxy Gym for current training options, timings and membership details.</p><a class="btn darkbtn" href="#contact">CONTACT GALAXY GYM ↗</a></div></div></section>
 
+
+<section class="section" id="contact-details">
+  <div class="section-head reveal">
+    <div>
+      <div class="eyebrow">CONTACT GALAXY GYM</div>
+      <h2>Let’s Start Your Fitness Journey</h2>
+    </div>
+    <p>Call us or send your enquiry directly on WhatsApp.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="contact-card">
+        <span class="contact-icon">☎</span>
+        <div>
+          <small>CALL US</small>
+          <strong>+91 95555 55637</strong>
+          <a class="contact-link" href="tel:919555555637">Call Galaxy Gym</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <span class="contact-icon">◉</span>
+        <div>
+          <small>WHATSAPP</small>
+          <strong>Quick Enquiry</strong>
+          <a class="contact-link" href="https://wa.me/919555555637" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <span class="contact-icon">⌖</span>
+        <div>
+          <small>VISIT US</small>
+          <strong>Galaxy Gym</strong>
+          <p>A-850/B, Street No. 4, Baraat Ghar Road, Sai Nagar, Meethapur, Badarpur, New Delhi, Delhi 110044</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="whatsapp-form reveal" id="whatsappForm">
+      <div class="form-title">Send Your Message</div>
+      <div class="form-subtitle">Your message will open in WhatsApp with the details filled in.</div>
+      <div class="form-row">
+        <label>Name<input id="waName" name="name" type="text" placeholder="Your name" required></label>
+        <label>Phone<input id="waPhone" name="phone" type="tel" placeholder="Your phone number" required></label>
+      </div>
+      <label>Interested In
+        <select id="waService" name="service">
+          <option>Gym Membership</option>
+          <option>Strength Training</option>
+          <option>Weight Training</option>
+          <option>Cardio Fitness</option>
+          <option>Functional Training</option>
+          <option>Fat Loss</option>
+          <option>Personal Guidance</option>
+          <option>Other Enquiry</option>
+        </select>
+      </label>
+      <label>Message<textarea id="waMessage" name="message" rows="5" placeholder="Tell us what you want to know..." required></textarea></label>
+      <button class="btn btn-primary" type="submit">Send on WhatsApp →</button>
+      <p class="form-note">WhatsApp will open in a new tab. No backend is required.</p>
+    </form>
+  </div>
+</section>
+
 <footer><div class="container foot"><div>© 2026 <b>Galaxy Gym</b>. Built for progress.</div><div>Meethapur, Badarpur, New Delhi</div></div></footer>
 
 <script>
@@ -210,5 +299,25 @@ function start3D(){
 function resize(){if(!renderer)return;camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)}
 function loop(){requestAnimationFrame(loop);group.rotation.y+=.002;group.children.forEach(o=>o.userData.s&&(o.rotation.z+=o.userData.s));stars.rotation.y-=.00025;renderer.render(scene,camera)}
 </script>
+
+<script>
+document.getElementById('whatsappForm')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name')?.value.trim() || '';
+  const userPhone = document.getElementById('phone')?.value.trim() || '';
+  const interest = document.getElementById('interest')?.value || '';
+  const message = document.getElementById('message')?.value.trim() || '';
+
+  const text =
+    `Hello Galaxy Gym!%0A%0A` +
+    `Name: ${encodeURIComponent(name)}%0A` +
+    `Phone: ${encodeURIComponent(userPhone)}%0A` +
+    `Interested In: ${encodeURIComponent(interest)}%0A` +
+    `Message: ${encodeURIComponent(message)}`;
+
+  window.open('https://wa.me/919555555637?text=' + text, '_blank', 'noopener,noreferrer');
+});
+</script>
+
 </body>
 </html>
